@@ -5,7 +5,7 @@ const cors=require('cors')
 
 const app = express()
 connectToMongo();
-const port = 5000
+const port = 5000|| process.env.PORT
 // for importing moongose
 
 app.use(cors())
