@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongoURI='mongodb://localhost:27017/inotebook?readPreference=primary&appname=MongoDB%20Compass&ssl=false'
+const mongoURI=`mongodb+srv://pamit7407084:${process.env.PASSWORD}@inotebook.lzdjfob.mongodb.net/${process.env.USER}?retryWrites=true&w=majority`
  
 
 const connectToMongo = () => {
